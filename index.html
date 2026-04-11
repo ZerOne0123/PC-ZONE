@@ -3,120 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <title>PC-ZONE</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: #f0f9fc">
+  <body>
     <!-- Header -->
     <header>
-      <table width="100%">
-        <tr>
-          <!-- LOGO -->
-          <td width="20%">
-            <img src="img/Logo.png" alt="Logo" width="200" />
-          </td>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="#" class="nav-logo">
+            <img
+              src="img/Logo_navbar_nobg.png"
+              alt="Ikon PZ"
+              class="logo-icon"
+            />
+            <span>PC-ZONE</span>
+          </a>
 
-          <!-- NAMA TOKO -->
-          <td width="40%">
-            <h1>PC-ZONE</h1>
-            <p>Premium Computer Hardware & Accessories</p>
-          </td>
-
-          <!-- MENU -->
-          <td width="40%" align="right">
-            <a href="#">Home</a> | <a href="#produk">Produk</a> |
-            <a href="#">Keranjang</a> |
-            <a href="#kontak">Kontak</a>
-          </td>
-        </tr>
-      </table>
+          <div class="nav-menu" id="navbar-default">
+            <ul class="nav-list">
+              <li><a href="#" class="nav-link active">About</a></li>
+              <li><a href="#" class="nav-link">Produk</a></li>
+              <li><a href="#" class="nav-link">Keranjang</a></li>
+              <li><a href="#" class="nav-link">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-
+    <!-- About us -->
+    <section id="about">
+  <div class="about-container">
+    <div class="about-text-content">
+      <div class="about-header">
+        <h1 class="about-text">Selamat Datang Di <span>PC-ZONE</span></h1>
+      </div>
+      <div class="row">
+        <div class="about-content">
+          <p>
+            Pusat penyedia komponen hardware dan aksesoris komputer
+            berkualitas untuk kebutuhan gaming, produktivitas, dan harian
+            Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="about-logo-content">
+      <div class="about-image">
+        <img src="img/Logo_navbar_nobg.png" alt="Logo" width="400" class="about-icon"/>
+      </div>
+    </div>
+  </div>
+</section>
     <hr />
-
-    <!-- KONTEN -->
-    <section id="produk">
-      <main>
-        <h2>Selamat Datang di PC-Zone</h2>
-        <p>
-          Pusat penyedia komponen hardware dan aksesoris komputer berkualitas
-          untuk kebutuhan gaming, produktivitas, dan harian Anda.
-        </p>
-        <!-- KONTEN PRODUK -->
-        <h3>Produk Kami</h3>
-        <table>
-          <tr>
-            <td align="center">
-              <img src="img/Keyboard.jpg" width="150" /><br />
-              Keyboard<br />
-              Rp600.000
-            </td>
-
-            <td align="center">
-              <img src="img/Deskmat.webp" width="150" /><br />
-              Deskmat<br />
-              Rp150.000
-            </td>
-
-            <td align="center">
-              <img src="img/Mouse.jpg" width="150" /><br />
-              Mouse<br />
-              Rp420.000
-            </td>
-            <td align="center">
-              <img src="img/White Case.jpg" width="150" /><br />
-              White Case PC<br />
-              Rp500.000
-            </td>
-          </tr>
-          <tr>
-            <td align="center">
-              <img src="img/Cooler.jpg" width="150" /><br />
-              Cooler Komputer<br />
-              Rp1.000.000
-            </td>
-
-            <td align="center">
-              <img src="img/RTX.jpg" width="150" /><br />
-              VGA<br />
-              Rp40.000.000
-            </td>
-
-            <td align="center">
-              <img src="img/Mobo.jpg" width="150" /><br />
-              Motherboard<br />
-              Rp2.000.000
-            </td>
-            <td align="center">
-              <img src="img/Headset.jpg" width="150" /><br />
-              Headset<br />
-              Rp100.000
-            </td>
-          </tr>
-        </table>
-      </main>
+    <!-- Products -->
+    <section id="products">
+      <h2>Product Kami</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="img/Keyboard.jpg" alt="Keyboard" width="300" />
+          <h3>Keyboard Gaming</h3>
+          <p>
+            Mechanical keyboard yang sangat menarik dengan desain yang elegan
+            dan lampu RGB
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="img/Mouse.jpg" alt="Mouse" width="300" />
+          <h3>Mouse Gaming</h3>
+          <p>
+            Mouse gaming dengan sensor presisi tinggi dan desain ergonomis untuk
+            kenyamanan maksimal
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="img/RTX.jpg" alt="Grafik Card" width="300" />
+          <h3>RTX 5090</h3>
+          <p>
+            Kartu grafis terbaru dengan performa luar biasa untuk gaming dan
+            rendering yang mulus
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="img/Mobo.jpg" alt="Motherboard" width="300" />
+          <h3>Motherboard</h3>
+          <p>
+            Motherboard berkualitas tinggi dengan fitur canggih untuk mendukung
+            semua kebutuhan komputasi Anda
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="img/White Case.jpg" alt="Case" width="300" />
+          <h3>Case PC</h3>
+          <p>
+            Case PC dengan desain modern dan ventilasi optimal untuk menjaga
+            suhu tetap rendah
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="img/Cooler.jpg" alt="Cooler" width="300" />
+          <h3>Cooler</h3>
+          <p>
+            Cooler dengan performa pendinginan tinggi untuk menjaga suhu PC Anda
+            tetap stabil selama sesi gaming intens
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="img/Headset.jpg" alt="Headset" width="300" />
+          <h3>Headset Gaming</h3>
+          <p>
+            Headset gaming dengan suara surround yang imersif dan mikrofon
+            noise-cancelling untuk komunikasi yang jelas
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="img/Deskmat.webp" alt="Deskmat" width="300" />
+          <h3>Deskmat</h3>
+          <p>
+            Deskmat dengan permukaan halus dan desain menarik untuk meningkatkan
+            kenyamanan dan gaya gaming Anda
+          </p>
+        </div>
+      </div>
     </section>
     <hr />
-    <!-- KONTAK -->
-    <section id="kontak">
+    <!-- Contact -->
+    <section id="contact">
       <h2>Hubungi Kami</h2>
-      <ul>
-        <li>
-          <img src="img/WA.png" alt="WhatsApp" width="20" /> |
-          <a href="">082332941521</a>
-        </li>
-        <li>
-          <img src="img/IG.png" alt="Instagram" width="20" /> |
-          <a href="">@raf_iam</a>
-        </li>
-        <li>
-          <img src="img/Email.png" alt="Instagram" width="20" /> |
-          <a href="">rafi.am2005@gmail.com</a>
-        </li>
-      </ul>
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Nama Lengkap" required />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="email" placeholder="Email" required />
+        </div>
+        <div class="input-group">
+          <i data-feather="message-square"></i>
+          <textarea placeholder="Pesan Anda" required></textarea>
+        </div>
+        <button type="submit">Kirim Pesan</button>
+      </form>
     </section>
     <hr />
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-      <p>© 2026 Rafi Ahmad Maulana 2419023</p>
+      <div class="social">
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="map-pin"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>&copy; <a href="">2024 PC-ZONE</a>. All rights reserved.</p>
     </footer>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
