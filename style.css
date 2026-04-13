@@ -110,7 +110,7 @@ body {
 }
 /* --- home SECTION --- */
 #home {
-  background-image: url('../img/Background.png'); 
+  background-image: url('img/Background.png'); 
   background-size: cover; 
   background-position: center; /* Posisi gambar di tengah */
   background-repeat: no-repeat;
@@ -325,7 +325,7 @@ body {
 #products {
   background-color: #0a192f;
   padding: 80px 80px;
-  color: #ffffff
+  color: #ffffff;
   font-family:"Segoe UI", Roboto, sans-serif;
 }
 #products h2{
