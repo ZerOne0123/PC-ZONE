@@ -95,21 +95,21 @@ body {
 }
 /* Navbar End */
 
-.about-header{
+.home-header{
   display: flex;
   justify-content: center;
 }
-.about-content{
+.home-content{
   display: flex;
   justify-content: center;
   font-size: 20px;
 }
-.about-image{
+.home-image{
   display: flex;
   justify-content: end;
 }
-/* --- ABOUT SECTION --- */
-#about {
+/* --- home SECTION --- */
+#home {
   background-image: url('../img/Background.png'); 
   background-size: cover; 
   background-position: center; /* Posisi gambar di tengah */
@@ -124,7 +124,7 @@ body {
   position: relative;
   color: #ffffff; 
 }
-.about-container{
+.home-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +133,7 @@ body {
   max-width: 1100px;
   margin: 0 auto;
 }
-.about-text-content{
+.home-text-content{
   flex: 1;
   text-align: center;
   background-color: #0A192FB3;
@@ -142,10 +142,10 @@ body {
   padding: 30px;
   border: 1px solid #FFFFFF1A;
 }
-.about-header{
+.home-header{
   margin-bottom: 60px;
 }
-.about-text{
+.home-text{
   font-size: 36px;
   font-weight: 850;
   letter-spacing: 2px;
@@ -155,28 +155,446 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#about p{
+#home p{
   font-size: 20px;
   line-height: 1.8;
   color: #d1d5db;
   max-width: 500px;
   text-align: left;
 }
-.about-logo-content{
+.home-logo-content{
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;  
 }
-.about-image {
+.home-image {
   display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
 }
-.about-icon {
-  width: 350px;
+.home-icon {
+  width: 450px;
   filter: drop-shadow(0 0 8px #00aeef);
   transition: transform 0.3s ease;
   object-fit: contain;
+}
+#about {
+  padding: 100px 10%;
+  background-color: #0a192f; /* Navy Gelap */
+  color: #ffffff;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Judul Utama */
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 850;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
+
+.section-title span {
+  color: #ff8c00; /* Oranye PC-ZONE */
+  text-shadow: 0 0 10px rgba(255, 140, 0, 0.3);
+}
+
+/* Wrapper Pembagi 2 Kolom */
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Kolom Kiri: Gambar */
+.about-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  filter: drop-shadow(0 0 20px rgba(0, 174, 239, 0.3));
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+/* Efek Cahaya di Belakang Gambar */
+.image-overlay-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 174, 239, 0.2) 0%, transparent 70%);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-image:hover img {
+  transform: scale(1.05) translateY(-10px);
+}
+
+/* Kolom Kanan: Konten */
+.about-content {
+  flex: 1;
+}
+
+.about-content h3 {
+  font-size: 28px;
+  color: #00aeef; /* Biru Elektrik */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #d1d5db;
+  margin-bottom: 20px;
+}
+
+/* Poin Keunggulan (Features) */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 35px 0;
+}
+
+.feature-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgba(0, 174, 239, 0.1);
+  transition: 0.3s;
+}
+
+.feature-item:hover {
+  background-color: rgba(0, 174, 239, 0.1);
+  border-color: #00aeef;
+}
+
+.feature-item .icon {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+/* Tombol CTA */
+.btn-about {
+  display: inline-block;
+  background-color: #ff8c00;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+}
+
+.btn-about:hover {
+  background-color: #e67e00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 140, 0, 0.5);
+}
+#products {
+  background-color: #0a192f;
+  padding: 80px 80px;
+  color: #ffffff
+  font-family:"Segoe UI", Roboto, sans-serif;
+}
+#products h2{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 850;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "Orbitron", "Segoe UI Bold", sans-serif;
+  
+  /* Gradasi Biru Elektrik ke Putih */
+  background: linear-gradient(to right, #00aeef, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 850;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "Orbitron", "Segoe UI Bold", sans-serif;
+  background: linear-gradient(to right, #00aeef, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-list {
+  display: grid;
+  /* Membuat kolom responsif: minimal lebar 300px, maksimal seimbang */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #FFFFFF08; 
+  border: 1px solid #FFFFFF1A;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px #FFFFFF1A;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* Agar gambar tidak gepeng */
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 174, 239, 0.5); /* Border menyala biru */
+  box-shadow: 0 10px 20px rgba(0, 174, 239, 0.15);
+}
+.product-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+.product-card p {
+  font-size: 14px;
+  color: #9ca3af; /* Teks abu-abu */
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+.product-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.product-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+}
+.btn-cart {
+  display: inline-flex;
+  align-items: center;
+  background-color: #00aeef; /* Warna biru PC-Zone */
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn-cart:hover {
+  background-color: #008fcc;
+  transform: scale(1.05);
+}
+
+.cart-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+#contact {
+  background-color: #0a192f; /* Background utama Navy PC-Zone */
+  padding: 80px 10%;
+  color: #ffffff;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+#contact h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 850;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "Orbitron", "Segoe UI Bold", sans-serif;
+  
+  /* Gradasi Biru Elektrik ke Putih */
+  background: linear-gradient(to right, #00aeef, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#contact form {
+  max-width: 600px;
+  margin: 0 auto; /* Mengetengahkan form */
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Bayangan lembut */
+}
+.input-group {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+.input-group:focus-within {
+  border-color: #00aeef;
+  background-color: rgba(0, 174, 239, 0.05);
+  box-shadow: 0 0 10px rgba(0, 174, 239, 0.2);
+}
+.input-group svg {
+  color: #00aeef; /* Warna ikon biru elektrik */
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  margin-top: 2px; /* Sejajar dengan teks */
+}
+.input-group input,
+.input-group textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none; /* Menghilangkan garis biru bawaan browser */
+  font-family: inherit;
+}
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #9ca3af; /* Abu-abu terang */
+}
+.input-group textarea {
+  min-height: 120px;
+  resize: vertical; /* Pengguna hanya bisa memperbesar secara vertikal */
+}
+#contact button[type="submit"] {
+  width: 100%;
+  background-color: #ff8c00; /* Oranye PC-Zone */
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+#contact button[type="submit"]:hover {
+  background-color: #e67e00;
+  transform: translateY(-3px); /* Tombol sedikit terangkat */
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4); /* Glow oranye */
+}
+footer {
+  background-color: #060e20; /* Navy sangat gelap sebagai penutup halaman */
+  padding: 60px 10% 30px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Garis batas atas sangat tipis */
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+footer .social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05); /* Lingkaran transparan */
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+footer .social a svg {
+  width: 20px;
+  height: 20px;
+  transition: stroke 0.3s ease;
+}
+footer .social a:hover {
+  background-color: #00aeef; /* Latar berubah biru elektrik saat di-hover */
+  transform: translateY(-5px); /* Efek melayang */
+  box-shadow: 0 5px 15px rgba(0, 174, 239, 0.4);
+}
+footer .social a:hover svg {
+  stroke: #ffffff; /* Warna ikon tetap putih */
+}
+/* Bagian Tautan Navigasi Bawah */
+footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Agar rapi jika layar kecil */
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+footer .links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer .links a:hover {
+  color: #ff8c00; /* Berubah oranye saat di-hover agar berbeda dari navbar */
+}
+
+/* Bagian Hak Cipta (Copyright) */
+footer p {
+  color: #9ca3af; /* Abu-abu terang */
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+footer p a {
+  color: #00aeef; /* Nama PC-ZONE berwarna biru */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
