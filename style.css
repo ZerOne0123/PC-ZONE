@@ -110,7 +110,7 @@ body {
 }
 /* --- home SECTION --- */
 #home {
-  background-image: url('img/Background.png'); 
+  background-image: url('../img/Background.png'); 
   background-size: cover; 
   background-position: center; /* Posisi gambar di tengah */
   background-repeat: no-repeat;
